@@ -27,8 +27,10 @@
                     <option value="middle">Média</option>
                     <option value="low">Baixa</option>
                 </select>
-                <!-- Botão corrigido -->
-                <button type="submit">Adicionar</button>
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                    Adicionar
+                </button>
             </div>
         </form>
         <form id="edit-form" class="hide">
@@ -42,7 +44,7 @@
                 </select>
                 <button type="submit"><i class="fa-solid fa-check-double"></i></button>
             </div>
-            <button id="cancel-edit-btn">Cancelar</button>
+            <button id="cancel-edit-btn" type="button">Cancelar</button>
         </form>
         <h6 id="countStatus">Status: A definir</h6>
         <div id="toolbar">
@@ -50,7 +52,7 @@
                 <h4>Pesquisar:</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
-                    <button id="erase-button"><i class="fa-solid fa-delete-left"></i></button>
+                    <button id="erase-button" type="button"><i class="fa-solid fa-delete-left"></i></button>
                 </form>
             </div>
             <div id="filter">
