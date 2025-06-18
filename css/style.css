@@ -28,6 +28,7 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    gap: 0.3rem; /* Espaço entre ícone e texto */
 }
 
 button:hover {
@@ -35,7 +36,7 @@ button:hover {
     color: #fff;
 }
 
-button:hover>i {
+button:hover > i {
     color: #fff;
 }
 
@@ -85,17 +86,28 @@ select {
     font-weight: bold;
 }
 
-#select-priority {
+#select-priority,
+#select-priority-edit {
     margin-right: 5px;
 }
 
 .form-control {
     display: flex;
+    align-items: center;
 }
 
 .form-control input {
     margin-right: .3rem;
-    width: 100%;
+    flex: 1;
+}
+
+.form-control select {
+    margin-right: .3rem;
+}
+
+.form-control button {
+    white-space: nowrap;
+    min-width: fit-content;
 }
 
 #cancel-edit-btn {
@@ -139,10 +151,6 @@ select {
     flex: 1;
 }
 
-#select-priority-edit {
-    margin-right: 5px;
-}
-
 #countStatus {
     display: flex;
     justify-content: end;
@@ -156,7 +164,6 @@ select {
     align-items: center;
     padding: 0.7rem;
     transition: .3s;
-    size: 10px;
     border-bottom: 1px solid #14213d;
 }
 
@@ -168,6 +175,8 @@ select {
     margin-left: 2%;
     display: flex;
     justify-content: center;
+    padding: 0.2rem;
+    border-radius: 3px;
 }
 
 #priority-middle {
@@ -178,6 +187,8 @@ select {
     margin-left: 2%;
     display: flex;
     justify-content: center;
+    padding: 0.2rem;
+    border-radius: 3px;
 }
 
 #priority-low {
@@ -188,15 +199,15 @@ select {
     margin-left: 2%;
     display: flex;
     justify-content: center;
+    padding: 0.2rem;
+    border-radius: 3px;
 }
-
 
 #priority-low p,
 #priority-middle p,
 #priority-high p {
     color: #fff;
 }
-
 
 .todo h3 {
     flex: 1;
